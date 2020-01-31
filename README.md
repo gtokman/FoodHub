@@ -10,5 +10,8 @@
 ### Getting Started 
 * Get an API key from [Yelp](https://api.yelp.com) (sign up for an account and make a new app)
 * Dependencies used [Quicktype](https://app.quicktype.io/), [Moya](https://github.com/Moya/Moya), [Kingfisher](https://github.com/onevcat/Kingfisher)
-* We're using Swift Package Manager (SPM) and Homebrew to manage dependencies
+* We're using Swift Package Manager ([SPM](https://swift.org/package-manager/)) and [Homebrew](https://brew.sh/) to manage dependencies
 * Tutorial is a 3 part series all episode links will eventually be posted here
+
+### Support
+Buy Me A [Coffee](https://buymeacoff.ee/buildswiftapps) ☕️
