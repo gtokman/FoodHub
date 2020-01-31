@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		4EBA5F6B23DE1A65001AD8F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBA5F6A23DE1A65001AD8F0 /* Assets.xcassets */; };
 		4EBA5F6E23DE1A65001AD8F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBA5F6D23DE1A65001AD8F0 /* Preview Assets.xcassets */; };
 		4EBA5F7123DE1A65001AD8F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBA5F6F23DE1A65001AD8F0 /* LaunchScreen.storyboard */; };
+		4EBA5F7A23DE1BB8001AD8F0 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4EBA5F7923DE1BB8001AD8F0 /* KingfisherSwiftUI */; };
+		4EBA5F7D23DE1C93001AD8F0 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4EBA5F7C23DE1C93001AD8F0 /* Moya */; };
+		4EBA5F8123DE1CC5001AD8F0 /* API.json in Resources */ = {isa = PBXBuildFile; fileRef = 4EBA5F8023DE1CC5001AD8F0 /* API.json */; };
+		4EBA5F8523DE1EBC001AD8F0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA5F8423DE1EBC001AD8F0 /* API.swift */; };
+		4EBA5F8823DE1FD5001AD8F0 /* YelpProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA5F8723DE1FD5001AD8F0 /* YelpProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,9 @@
 		4EBA5F6D23DE1A65001AD8F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4EBA5F7023DE1A65001AD8F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EBA5F7223DE1A65001AD8F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EBA5F8023DE1CC5001AD8F0 /* API.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = API.json; sourceTree = "<group>"; };
+		4EBA5F8423DE1EBC001AD8F0 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		4EBA5F8723DE1FD5001AD8F0 /* YelpProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +39,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EBA5F7D23DE1C93001AD8F0 /* Moya in Frameworks */,
+				4EBA5F7A23DE1BB8001AD8F0 /* KingfisherSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EB161AA23DFEDD000AEBFD3 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		4EBA5F5823DE1A63001AD8F0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +73,7 @@
 		4EBA5F6323DE1A63001AD8F0 /* FoodHub */ = {
 			isa = PBXGroup;
 			children = (
+				4EBA5F7E23DE1C9D001AD8F0 /* API */,
 				4EBA5F6423DE1A63001AD8F0 /* AppDelegate.swift */,
 				4EBA5F6623DE1A63001AD8F0 /* SceneDelegate.swift */,
 				4EBA5F6823DE1A63001AD8F0 /* ContentView.swift */,
@@ -75,6 +93,41 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4EBA5F7E23DE1C9D001AD8F0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4EBA5F8623DE1FC5001AD8F0 /* Provider */,
+				4EBA5F8223DE1D22001AD8F0 /* Models */,
+				4EBA5F7F23DE1CA7001AD8F0 /* JSON */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4EBA5F7F23DE1CA7001AD8F0 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				4EBA5F8023DE1CC5001AD8F0 /* API.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		4EBA5F8223DE1D22001AD8F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4EBA5F8423DE1EBC001AD8F0 /* API.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4EBA5F8623DE1FC5001AD8F0 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				4EB161AA23DFEDD000AEBFD3 /* New Group */,
+				4EBA5F8723DE1FD5001AD8F0 /* YelpProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,12 +138,17 @@
 				4EBA5F5D23DE1A63001AD8F0 /* Sources */,
 				4EBA5F5E23DE1A63001AD8F0 /* Frameworks */,
 				4EBA5F5F23DE1A63001AD8F0 /* Resources */,
+				4EBA5F8323DE1D34001AD8F0 /* Quicktype */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FoodHub;
+			packageProductDependencies = (
+				4EBA5F7923DE1BB8001AD8F0 /* KingfisherSwiftUI */,
+				4EBA5F7C23DE1C93001AD8F0 /* Moya */,
+			);
 			productName = FoodHub;
 			productReference = 4EBA5F6123DE1A63001AD8F0 /* FoodHub.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +177,10 @@
 				Base,
 			);
 			mainGroup = 4EBA5F5823DE1A63001AD8F0;
+			packageReferences = (
+				4EBA5F7823DE1BB8001AD8F0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				4EBA5F7B23DE1C93001AD8F0 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 4EBA5F6223DE1A63001AD8F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,11 +197,33 @@
 			files = (
 				4EBA5F7123DE1A65001AD8F0 /* LaunchScreen.storyboard in Resources */,
 				4EBA5F6E23DE1A65001AD8F0 /* Preview Assets.xcassets in Resources */,
+				4EBA5F8123DE1CC5001AD8F0 /* API.json in Resources */,
 				4EBA5F6B23DE1A65001AD8F0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EBA5F8323DE1D34001AD8F0 /* Quicktype */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Quicktype;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "quicktype -o $SRCROOT/FoodHub/API/Models/API.swift -l swift --src $SRCROOT/FoodHub/API/JSON/API.json --no-enums --all-properties-optional --swift-5-support --no-initializers\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4EBA5F5D23DE1A63001AD8F0 /* Sources */ = {
@@ -148,7 +232,9 @@
 			files = (
 				4EBA5F6523DE1A63001AD8F0 /* AppDelegate.swift in Sources */,
 				4EBA5F6723DE1A63001AD8F0 /* SceneDelegate.swift in Sources */,
+				4EBA5F8523DE1EBC001AD8F0 /* API.swift in Sources */,
 				4EBA5F6923DE1A63001AD8F0 /* ContentView.swift in Sources */,
+				4EBA5F8823DE1FD5001AD8F0 /* YelpProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +428,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4EBA5F7823DE1BB8001AD8F0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.13.0;
+			};
+		};
+		4EBA5F7B23DE1C93001AD8F0 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4EBA5F7923DE1BB8001AD8F0 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EBA5F7823DE1BB8001AD8F0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+		4EBA5F7C23DE1C93001AD8F0 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EBA5F7B23DE1C93001AD8F0 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4EBA5F5923DE1A63001AD8F0 /* Project object */;
 }
