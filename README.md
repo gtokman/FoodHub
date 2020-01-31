@@ -14,5 +14,10 @@
 * We're using Swift Package Manager ([SPM](https://swift.org/package-manager/)) and [Homebrew](https://brew.sh/) to manage dependencies
 * Tutorial is a 3 part series all episode links will eventually be posted here
 
+### Install
+* Clone repo
+* Run `brew bundle` in project directory
+* open .xcodeproj (`xed .`) and run
+
 ### Support
 Buy Me A [Coffee](https://buymeacoff.ee/buildswiftapps) ☕️
